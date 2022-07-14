@@ -1,7 +1,19 @@
 Unit Testing on React components using Jest.
 
+### Testing commong approaches AAA's: Arrange, Act and Assertion.
+
+Arrange: we are arranging env such that we can test in our component. eg. useQuery.mockReturnValue({})
+Act: based on arrange env how the component is arranging
+Assertion: to expect the outcome
+
+
 - Mocked useQuery which is a custom hook to call an api and return following states:
-{isLoading, data, error}
+{isLoading, data, error}.
+- Checked isLoading working as expected by creating mock useQuery return states.
+- is it mounting in DOM
+- comparing expected outcome
+
+
 
 ```
 import { render, screen } from "@testing-library/react";
@@ -19,6 +31,7 @@ jest.mock("react-query")
 In testing we have common pattern AAA's: Arrange, Act and Assertion
 Arrange: we are arranging env such that we can test in our component. eg. useQuery.mockReturnValue({})
 Act: based on arrange env how the component is arranging
+Assertion: to expect the outcome
 
 */
 
