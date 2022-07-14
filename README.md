@@ -13,8 +13,14 @@ Assertion: to expect the outcome
 - is it mounting in DOM
 - comparing expected outcome
 
+React Component: PostList.js
+```
+{isLoading ? (
+        <div data-testid="loading-text">Loading..</div> //while testing it is good practise to make test-id, so that we can access that text
+      ): (...data)
+```
 
-
+React Testing Component: PostList.test.js
 ```
 import { render, screen } from "@testing-library/react";
 import React from "react";
