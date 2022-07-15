@@ -55,7 +55,7 @@ const PostList = ({ isDrawerOpen, closeDrawer }) => {
         >
           {data.data.map((listItem) => {
             return (
-              <ListItem key={listItem.id}>
+              <ListItem data-testid="listItem" key={listItem.id}>
                 <Link
                   padding=".8rem"
                   display="flex"
