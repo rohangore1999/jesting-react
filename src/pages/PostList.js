@@ -27,9 +27,14 @@ const PostList = ({ isDrawerOpen, closeDrawer }) => {
     return Get("http://localhost:3002/posts");
   });
 
+  console.log(data)
+
+  console.log("Hello SPY!")
+
   const { colorMode } = useColorMode();
   const theme = useTheme();
 
+  
   return (
     <Box
       w={{
